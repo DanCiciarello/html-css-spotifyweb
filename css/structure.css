@@ -1,0 +1,148 @@
+/*---------*/
+/* General */
+/*---------*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --default-bar-height: 100px;
+    --small-bar-height: 75px;
+    --default-padding: 1rem;
+}
+
+
+/*------*/
+/* Flex */
+/*------*/
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+.no-shrink {
+    flex-shrink: 0;
+}
+
+.center-v-align {
+    align-items: center;
+}
+
+.center-h-align {
+    justify-content: center;
+}
+
+.right-h-align {
+    justify-content: flex-end;
+}
+
+.left-h-align {
+    justify-content: flex-start;
+}
+
+
+/*-----*/
+/* Row */
+/*-----*/
+
+
+
+
+
+/*---------*/
+/* Columns */
+/*---------*/
+
+
+
+
+/*------------*/
+/* Containers */
+/*------------*/
+
+/* General */
+
+.app-container {
+    width: 100%;
+    height: 100vh;
+}
+
+.main-wrapper {
+    /* Debug */
+    background-color: azure;
+}
+
+/* Sidebar */
+
+.sidebar-container {
+    min-width: 250px;
+    padding: var(--default-padding);
+    /* Debug */
+    background-color: black;
+}
+
+.sidebar-logo-container {
+    padding-top: var(--default-padding);
+    padding-bottom: var(--default-padding);
+}
+
+.sidebar-buttons-container {
+    padding-top: var(--default-padding);
+    padding-bottom: var(--default-padding);
+}
+
+.sidebar-playlist-container {
+    padding-top: var(--default-padding);
+    padding-bottom: var(--default-padding);
+}
+
+.sidebar-account-container {
+    padding-top: var(--default-padding);
+    padding-bottom: var(--default-padding);
+}
+
+/* Playlist */
+
+.upgrade-bar-container {
+    height: var(--small-bar-height);
+    padding: var(--default-padding);
+    /* Debug */
+    background-color: rgb(35, 35, 35);
+}
+
+.playlist-container {
+    /* Debug */
+    background-color: rgb(62, 62, 62);
+}
+
+/* Control bar */
+
+.control-bar-container {
+    height: var(--default-bar-height);
+    /* Debug */
+    background-color: rgb(35, 35, 35);
+}
+
+
+/*----------*/
+/* Overflow */
+/*----------*/
+
+.overflow-y {
+    overflow: auto;
+}
