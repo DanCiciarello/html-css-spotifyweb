@@ -29,23 +29,77 @@
             <div class="sidebar-container no-shrink flex flex-column">
 
                 <!-- Sidebar Logo -->
-                <div class="sidebar-logo-container color-white">
-                    Logo here
+                <div class="sidebar-logo-container">
+                    <img src="img/logo.svg" alt="Spotify Logo">
                 </div>
 
                 <!-- Sidebar Buttons -->
-                <div class="sidebar-buttons-container color-white">
-                    Button<br>Button<br>Button<br>Button<br>Button
+                <div class="sidebar-buttons-container">
+                    
+                    <!-- Home -->
+                    <a href="#" class="sidebar-button color-white">
+                        <div class="sidebar-button-icon"><img src="img/home.svg" alt="Home icon"></div>
+                        <div class="sidebar-button-text">Home</div>
+                    </a>
+
+                    <!-- Cerca -->
+                    <a href="#" class="sidebar-button color-gray">
+                        <div class="sidebar-button-icon"><img src="img/search.svg" class="color-gray-svg" alt="Search icon"></div>
+                        <div class="sidebar-button-text">Cerca</div>
+                    </a>
+
+                    <!-- La tua libreria -->
+                    <a href="#" class="sidebar-button color-gray">
+                        <div class="sidebar-button-icon"><img src="img/libreria.svg" class="color-gray-svg" alt="Search icon"></div>
+                        <div class="sidebar-button-text">La tua libreria</div>
+                    </a>
+
                 </div>
 
                 <!-- Sidebar Playlist -->
                 <div class="sidebar-playlist-container grow overflow-y color-white">
-                    Playlist<br>Playlist<br>Playlist<br>Playlist<br>Playlist<br>Playlist<br>Playlist<br>Playlist<br>Playlist<br>Playlist<br>Playlist<br>Playlist<br>Playlist<br>Playlist<br>Playlist<br>Playlist<br>Playlist<br>Playlist<br>Playlist<br>Playlist<br>Playlist<br>Playlist<br>Playlist<br>Playlist<br>Playlist<br>Playlist<br>Playlist<br>Playlist
+                    
+                    <!-- Playlist title -->
+                    <div class="sidebar-playlist-title">
+                        <h6 class="color-white">Playlist</h6>
+                    </div>
+
+                    <!-- Crea playlist -->
+                    <a href="#" class="crea-playlist">
+                        <div class="crea-playlist-icon">+</div>
+                        <div class="crea-playlist-text">Crea playlist</div>
+                    </a>
+
+                    <!-- Playlist list -->
+                    <div class="sidebar-playlist">Nome Playlist</div>
+                    <div class="sidebar-playlist">Nome Playlist</div>
+                    <div class="sidebar-playlist">Nome Playlist</div>
+                    <div class="sidebar-playlist">Nome Playlist</div>
+                    <div class="sidebar-playlist">Nome Playlist</div>
+                    <div class="sidebar-playlist">Nome Playlist</div>
+                    <div class="sidebar-playlist">Nome Playlist</div>
+                    <div class="sidebar-playlist">Nome Playlist</div>
+
                 </div>
 
                 <!-- Sidebar Account -->
-                <div class="sidebar-account-container color-white">
-                    Download app here<br>User here
+                <div class="sidebar-account-container">
+                    
+                    <!-- Install app -->
+                    <a href="#" class="install-app">
+                        <div class="install-app-icon"><img src="img/download.svg" class="color-gray-svg" alt="Download icon"></div>
+                        <div class="install-app-text">Installa app</div>
+                    </a>
+
+                    <!-- Divider -->
+                    <div class="sidebar-divider"></div>
+
+                    <!-- User account -->
+                    <a href="#" class="sidebar-button user-sidebar-button color-white">
+                        <div class="sidebar-button-icon user-sidebar-icon"></div>
+                        <div class="sidebar-button-text user-sidebar-text">John Doe</div>
+                    </a>
+
                 </div>
 
                 
@@ -55,17 +109,37 @@
             <div class="main-section-container grow flex flex-column">
 
                 <!-- Upgrade top bar no shrink -->
-                <div class="upgrade-bar-container no-shrink flex right-h-align center-v-align color-white">
+                <div class="upgrade-bar-container no-shrink flex right-x-align center-y-align color-white">
 
                     <!-- Upgrade button -->
                     <div class="upgrade-button-container">
-                        Upgrade button here
+                        <a href="#" class="upgrade-button"><h6>Effettua l'upgrade</h6></a>
                     </div>
 
                 </div>
 
                 <!-- Playlist container -->
-                <div class="playlist-container grow">
+                <div class="playlist-container grow overflow-y">
+                    
+                    <!-- Playlist tab -->
+                    <div class="playlist-tab-container">
+
+                    </div>
+
+                    <!-- Recently played -->
+                    <div class="recently-played-container">
+
+                    </div>
+
+                    <!-- Created for -->
+                    <div class="created-for-container">
+
+                    </div>
+
+                    <!-- Popular artists -->
+                    <div class="popular-artists-container">
+
+                    </div>
 
                 </div>
 
@@ -74,7 +148,22 @@
         </div>
     
         <!-- Control bar no shrink -->
-        <div class="control-bar-container no-shrink">
+        <div class="control-bar-container no-shrink flex">
+
+            <!-- Playing now container -->
+            <div class="playing-now-container">
+
+            </div>
+
+            <!-- Song controller container -->
+            <div class="song-controller-container">
+
+            </div>
+
+            <!-- Volume controller container -->
+            <div class="volume-controller-container">
+
+            </div>
     
         </div>
 

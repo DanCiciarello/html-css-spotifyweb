@@ -6,6 +6,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+:root {
+    --color-gray: #7E7E7E;
+}
+
 
 /*--------*/
 /* Colors */
@@ -13,4 +17,22 @@
 
 .color-white {
     color: white;
+}
+
+.color-gray {
+    color: var(--color-gray);
+}
+
+.color-gray-svg {
+    filter: invert(49%) sepia(0%) saturate(1003%) hue-rotate(165deg) brightness(85%) contrast(92%);
+}
+
+
+/*------------*/
+/* Typography */
+/*------------*/
+
+h6 {
+    font-size: 12px;
+    text-transform: uppercase;
 }

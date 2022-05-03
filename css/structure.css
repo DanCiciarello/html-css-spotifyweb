@@ -11,7 +11,11 @@
 :root {
     --default-bar-height: 100px;
     --small-bar-height: 75px;
+    --xxsmall-padding: .125rem;
+    --xsmall-padding: .25rem;
+    --small-padding: .5rem;
     --default-padding: 1rem;
+    --large-padding: 1.5rem;
 }
 
 
@@ -39,36 +43,30 @@
     flex-shrink: 0;
 }
 
-.center-v-align {
+.center-y-align {
     align-items: center;
 }
 
-.center-h-align {
+.center-x-align {
     justify-content: center;
 }
 
-.right-h-align {
+.right-x-align {
     justify-content: flex-end;
 }
 
-.left-h-align {
+.left-x-align {
     justify-content: flex-start;
 }
 
 
-/*-----*/
-/* Row */
-/*-----*/
+/*----------*/
+/* Overflow */
+/*----------*/
 
-
-
-
-
-/*---------*/
-/* Columns */
-/*---------*/
-
-
+.overflow-y {
+    overflow: auto;
+}
 
 
 /*------------*/
@@ -90,15 +88,14 @@
 /* Sidebar */
 
 .sidebar-container {
-    min-width: 250px;
+    width: 250px;
     padding: var(--default-padding);
-    /* Debug */
-    background-color: black;
+    background-color: #000000;
 }
 
 .sidebar-logo-container {
-    padding-top: var(--default-padding);
-    padding-bottom: var(--default-padding);
+    padding-top: var(--xxsmall-padding);
+    padding-bottom: var(--small-padding);
 }
 
 .sidebar-buttons-container {
@@ -113,7 +110,6 @@
 
 .sidebar-account-container {
     padding-top: var(--default-padding);
-    padding-bottom: var(--default-padding);
 }
 
 /* Playlist */
@@ -121,28 +117,70 @@
 .upgrade-bar-container {
     height: var(--small-bar-height);
     padding: var(--default-padding);
-    /* Debug */
-    background-color: rgb(35, 35, 35);
+    background-color: #070B12;
 }
 
 .playlist-container {
+    background-color: #141922;
+    padding: var(--default-padding);
+}
+
+.playlist-tab-container {
+    margin-bottom: var(--large-padding);
     /* Debug */
-    background-color: rgb(62, 62, 62);
+    height: 10px;
+    border: 1px dashed red;
+}
+
+.recently-played-container,
+.created-for-container,
+.popular-artists-container {
+    margin-bottom: var(--large-padding);
+    /* Debug */
+    height: 300px;
+    border: 1px dashed red;
 }
 
 /* Control bar */
 
 .control-bar-container {
     height: var(--default-bar-height);
+    padding: var(--small-padding);
+    background-color: #282828;
+    justify-content: space-between;
+}
+
+.volume-controller-container,
+.playing-now-container {
+    width: 200px;
     /* Debug */
-    background-color: rgb(35, 35, 35);
+    border: 1px dashed red;
+}
+
+.song-controller-container {
+    width: 600px;
+    /* Debug */
+    border: 1px dashed red;
 }
 
 
 /*----------*/
-/* Overflow */
+/* Sections */
 /*----------*/
 
-.overflow-y {
-    overflow: auto;
+/* Sidebar */
+
+.sidebar-logo-container img {
+    width: 150px;
+}
+
+.sidebar-playlist-title,
+.crea-playlist {
+    margin-bottom: var(--default-padding);
+}
+
+.sidebar-divider {
+    border-bottom: 1px solid var(--color-gray);
+    margin-top: var(--default-padding);
+    margin-bottom: var(--default-padding);
 }

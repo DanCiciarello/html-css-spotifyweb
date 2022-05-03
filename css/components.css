@@ -1,0 +1,119 @@
+/*---------*/
+/* General */
+/*---------*/
+
+:root {
+    --small-text: 12px;
+    --default-text: 14px;
+}
+
+
+/*---------*/
+/* Sidebar */
+/*---------*/
+
+/* Sidebar button */
+
+.sidebar-button {
+    display: flex;
+    gap: 7px;
+    height: 25px;
+    margin-bottom: var(--xsmall-padding);
+    text-decoration: none;
+}
+
+.sidebar-button-icon {
+    width: 25px;
+    aspect-ratio: 1;
+}
+
+.sidebar-button-text {
+    display: flex;
+    align-items: center;
+    font-size: var(--small-text);
+}
+
+.user-sidebar-button {
+    margin-bottom: 0;
+}
+
+.user-sidebar-icon {
+    background-color: var(--color-gray);
+    background-image: url('../img/profile.svg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.user-sidebar-text {
+    font-weight: 700;
+}
+
+/* Crea playlist */
+
+.crea-playlist {
+    display: flex;
+    gap: 7px;
+    text-decoration: none;
+    color: var(--color-gray);
+}
+
+.crea-playlist-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    aspect-ratio: 1;
+    background-color: var(--color-gray);
+    color: #000000;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.crea-playlist-text {
+    display: flex;
+    align-items: center;
+    font-size: var(--default-text);
+}
+
+/* Sidebar playlist */
+
+.sidebar-playlist {
+    font-size: var(--small-text);
+    color: var(--color-gray);
+    margin-bottom: var(--default-padding);
+}
+
+/* Install app */
+
+.install-app {
+    display: flex;
+    gap: 7px;
+    text-decoration: none;
+}
+
+.install-app-icon {
+    height: 15px;
+    aspect-ratio: 1;
+}
+
+.install-app-text {
+    color: var(--color-gray);
+    font-size: var(--small-text);
+}
+
+
+/*-----------------*/
+/* Upgrade top bar */
+/*-----------------*/
+
+/* Upgrade button */
+
+.upgrade-button {
+    display: inline-block;
+    padding: 10px 35px;
+    border-radius: 20px;
+    border: .5px solid #ffffff;
+    text-decoration: none;
+    color: #ffffff;
+}
