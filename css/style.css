@@ -33,6 +33,17 @@
 /*------------*/
 
 h6 {
-    font-size: 12px;
+    font-size: 10px;
     text-transform: uppercase;
+}
+
+.subtitle {
+    font-size: var(--small-text);
+    line-height: 15px;
+    font-weight: 600;
+}
+
+.subtitle-small {
+    font-size: var(--xsmall-text);
+    line-height: 12px;
 }

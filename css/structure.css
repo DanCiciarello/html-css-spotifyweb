@@ -9,13 +9,21 @@
 }
 
 :root {
+    /* Bar */
     --default-bar-height: 100px;
-    --small-bar-height: 75px;
+    --small-bar-height: 70px;
+    /* Padding */
     --xxsmall-padding: .125rem;
     --xsmall-padding: .25rem;
     --small-padding: .5rem;
     --default-padding: 1rem;
     --large-padding: 1.5rem;
+    /* Text */
+    --xsmall-text: 8px;
+    --small-text: 10px;
+    --default-text: 12px;
+    --large-text: 14px;
+    --xlarge-text: 16px;
 }
 
 
@@ -88,7 +96,7 @@
 /* Sidebar */
 
 .sidebar-container {
-    width: 250px;
+    width: 175px;
     padding: var(--default-padding);
     background-color: #000000;
 }
@@ -105,7 +113,7 @@
 
 .sidebar-playlist-container {
     padding-top: var(--default-padding);
-    padding-bottom: var(--default-padding);
+    padding-bottom: var(--large-padding);
 }
 
 .sidebar-account-container {
@@ -144,7 +152,7 @@
 /* Control bar */
 
 .control-bar-container {
-    height: var(--default-bar-height);
+    height: var(--small-bar-height);
     padding: var(--small-padding);
     background-color: #282828;
     justify-content: space-between;
@@ -152,15 +160,12 @@
 
 .volume-controller-container,
 .playing-now-container {
-    width: 200px;
-    /* Debug */
-    border: 1px dashed red;
+    width: 160px;
+    gap: 7px;
 }
 
 .song-controller-container {
-    width: 600px;
-    /* Debug */
-    border: 1px dashed red;
+    width: 400px;
 }
 
 
@@ -171,7 +176,7 @@
 /* Sidebar */
 
 .sidebar-logo-container img {
-    width: 150px;
+    width: 100px;
 }
 
 .sidebar-playlist-title,
@@ -183,4 +188,60 @@
     border-bottom: 1px solid var(--color-gray);
     margin-top: var(--default-padding);
     margin-bottom: var(--default-padding);
+}
+
+.playlist-list {
+    height: 100%;
+}
+
+/* Control bar */
+
+.playing-now-cover,
+.playing-now-controls {
+    flex-basis: 25%;
+}
+
+.playing-now-controls {
+    gap: 10px;
+    text-decoration: none;
+    color: var(--color-gray);
+}
+
+.playing-now-cover img {
+    width: 100%;
+}
+
+.volume-controller-icons {
+    font-size: var(--default-text);
+    gap: 13px;
+    text-decoration: none;
+}
+
+.volume-controller-bar-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.song-controls {
+    width: 150px;
+    height: 50%;
+    margin: 0 auto;
+    justify-content: space-around;
+    font-size: var(--default-text);
+}
+
+.song-controls .play-button {
+    font-size: calc(var(--xlarge-text) + 7px);
+    text-decoration: none;
+}
+
+.song-status {
+    height: 50%;
+}
+
+.song-time {
+    position: relative;
+    min-width: 35px;
+    font-size: var(--xsmall-text);
+    font-weight: 500;
 }

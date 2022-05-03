@@ -23,7 +23,7 @@
     <div class="app-container flex flex-column">
 
         <!-- Main Wrapper -->
-        <div class="main-wrapper grow flex overflow-y">
+        <div class="main-wrapper grow overflow-y flex overflow-y">
 
             <!-- Sidebar no shrink -->
             <div class="sidebar-container no-shrink flex flex-column">
@@ -57,7 +57,7 @@
                 </div>
 
                 <!-- Sidebar Playlist -->
-                <div class="sidebar-playlist-container grow overflow-y color-white">
+                <div class="sidebar-playlist-container grow color-white">
                     
                     <!-- Playlist title -->
                     <div class="sidebar-playlist-title">
@@ -71,14 +71,13 @@
                     </a>
 
                     <!-- Playlist list -->
-                    <div class="sidebar-playlist">Nome Playlist</div>
-                    <div class="sidebar-playlist">Nome Playlist</div>
-                    <div class="sidebar-playlist">Nome Playlist</div>
-                    <div class="sidebar-playlist">Nome Playlist</div>
-                    <div class="sidebar-playlist">Nome Playlist</div>
-                    <div class="sidebar-playlist">Nome Playlist</div>
-                    <div class="sidebar-playlist">Nome Playlist</div>
-                    <div class="sidebar-playlist">Nome Playlist</div>
+                    <div class="playlist-list">
+                        <div class="sidebar-playlist">Playlist #01</div>
+                        <div class="sidebar-playlist">Playlist #02</div>
+                        <div class="sidebar-playlist">Playlist #03</div>
+                        <div class="sidebar-playlist">Playlist #04</div>
+                        <div class="sidebar-playlist">Playlist #05</div>
+                    </div>
 
                 </div>
 
@@ -151,17 +150,66 @@
         <div class="control-bar-container no-shrink flex">
 
             <!-- Playing now container -->
-            <div class="playing-now-container">
+            <div class="playing-now-container flex center-y-align">
+                
+                <!-- Playing now cover -->
+                <div class="playing-now-cover no-shrink"><img src="img/sinister.jpeg" alt="Sinister cover"></div>
+                
+                <!-- Playing now song -->
+                <div class="playing-now-song grow">
+                    <div class="subtitle color-white">Sinister</div>
+                    <div class="subtitle-small color-gray">Brano nome</div>
+                </div>
+
+                <!-- Playing now controls -->
+                <div class="playing-now-controls flex">
+                    <a href="#"><i class="fa-regular fa-folder color-gray"></i></a>
+                    <a href="#"><i class="fa-regular fa-heart color-gray"></i></a>
+                </div>
 
             </div>
 
             <!-- Song controller container -->
             <div class="song-controller-container">
 
+                <!-- Song controls -->
+                <div class="song-controls flex center-y-align">
+                    <a href="#"><i class="fa-solid fa-shuffle color-white"></i></a>
+                    <a href="#"><i class="fa-solid fa-backward-step color-white"></i></a>
+                    <a href="#"><i class="fa-regular fa-circle-play color-white play-button"></i></a>
+                    <a href="#"><i class="fa-solid fa-forward-step color-white"></i></a>
+                    <a href="#"><i class="fa-solid fa-rotate-right color-white"></i></a>
+                </div>
+
+                <!-- Song status -->
+                <div class="song-status flex center-y-align">
+                    <div class="song-time color-white">0:25</div>
+                    <div class="song-time grow">
+                        <div class="status-bar empty-status"></div>
+                        <div class="status-bar active-status"></div>
+                    </div>
+                    <div class="song-time color-white flex right-x-align">4:35</div>
+                </div>
+
             </div>
 
             <!-- Volume controller container -->
-            <div class="volume-controller-container">
+            <div class="volume-controller-container flex">
+
+                <!-- Volume icons -->
+                <div class="volume-controller-icons flex center-y-align">
+                    <a href="#"><i class="fa-solid fa-list color-white"></i></a>
+                    <a href="#"><i class="fa-solid fa-display color-white"></i></a>
+                    <a href="#"><i class="fa-solid fa-volume-high color-white"></i></a>
+                </div>
+
+                <!-- Volume bar -->
+                <div class="volume-controller-bar grow flex center-y-align">
+                    <div class="volume-controller-bar-wrapper">
+                        <div class="status-bar empty-status"></div>
+                        <div class="status-bar active-status"></div>
+                    </div>
+                </div>
 
             </div>
     
