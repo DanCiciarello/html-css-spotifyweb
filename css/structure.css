@@ -78,7 +78,7 @@
 }
 
 .hidden {
-    display: none;
+    visibility: hidden;
 }
 
 .rounded {
@@ -91,7 +91,8 @@
 }
 
 .col {
-    flex-basis: calc(100% / 6);
+    flex-grow: 1;
+    max-width: calc(100% / 6 - 10px);
 }
 
 
@@ -186,7 +187,11 @@
 /* Sidebar */
 
 .sidebar-logo-container img {
-    width: 100px;
+    height: 30px;
+}
+
+.sidebar-logo-small {
+    display: none;
 }
 
 .sidebar-playlist-title,
@@ -243,7 +248,7 @@
     width: 150px;
     height: 50%;
     margin: 0 auto;
-    justify-content: space-around;
+    justify-content: space-between;
     font-size: var(--large-text);
 }
 

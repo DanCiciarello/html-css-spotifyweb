@@ -120,6 +120,7 @@
 .highlight-playlist-tab-item {
     width: 20px;
     border-top: 2px solid #ADFF2F;
+    padding-bottom: var(--default-padding);
     margin: 0 auto;
 }
 
