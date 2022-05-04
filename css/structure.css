@@ -233,6 +233,11 @@
     width: 100%;
 }
 
+.playing-now-song a {
+    text-decoration: none;
+    color: unset;
+}
+
 .volume-controller-icons {
     font-size: var(--large-text);
     gap: 13px;

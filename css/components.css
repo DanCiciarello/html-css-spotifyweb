@@ -69,6 +69,7 @@
 .sidebar-playlist {
     color: var(--color-gray);
     margin-bottom: var(--default-padding);
+    text-decoration: none;
 }
 
 /* Install app */
@@ -115,6 +116,7 @@
     text-transform: uppercase;
     color: var(--color-gray);
     padding: 0 var(--default-padding);
+    text-decoration: none;
 }
 
 .highlight-playlist-tab-item {
@@ -133,6 +135,7 @@
 .playlist-card-cover {
     width: 100%;
     aspect-ratio: 1;
+    position: relative;
 }
 
 .playlist-card-cover img {
@@ -170,4 +173,15 @@
     position: absolute;
     top: 0;
     width: 30%;
+}
+
+.status-bar-toggle {
+    width: 12px;
+    aspect-ratio: 1;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: -5px;
+    display: none;
 }

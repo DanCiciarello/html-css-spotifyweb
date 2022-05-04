@@ -1,0 +1,73 @@
+/*---------------*/
+/* Hover effects */
+/*---------------*/
+
+/* Upgrade button */
+
+.upgrade-button:hover {
+    transform: scale(105%);
+}
+
+/* Links */
+
+.playlist-tab-item:hover,
+.sidebar-button:hover,
+.crea-playlist:hover,
+.sidebar-playlist:hover,
+.install-app:hover .subtitle-small,
+.playing-now-song:hover .subtitle-small,
+.playing-now-controls a:hover i {
+    color: #ffffff;
+}
+
+.sidebar-button:hover .color-gray-svg,
+.install-app:hover .color-gray-svg {
+    filter: none;
+}
+
+.crea-playlist:hover .crea-playlist-icon {
+    background-color: #ffffff;
+}
+
+.playing-now-song:hover .subtitle-small {
+    text-decoration: underline;
+}
+
+.play-button:hover {
+    transform: scale(120%);
+}
+
+/* Status bar */
+
+.song-time.grow:hover .status-bar.active-status,
+.volume-controller-bar-wrapper:hover .status-bar.active-status {
+    background-color: greenyellow;
+    cursor: pointer;
+}
+
+.song-time.grow:hover .status-bar-toggle,
+.volume-controller-bar-wrapper:hover .status-bar-toggle {
+    display: block;
+}
+
+/* Playlist Card */
+
+.playlist-card-cover-hover {
+    width: 100%;
+    aspect-ratio: 1;
+    background-color: #000000a1;
+    position: absolute;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.playlist-card-cover-hover a {
+    text-decoration: none;
+}
+
+.playlist-card-cover:hover .playlist-card-cover-hover {
+    display: flex;
+}
