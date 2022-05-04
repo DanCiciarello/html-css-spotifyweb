@@ -34,16 +34,31 @@
 
 h6 {
     font-size: 10px;
+    line-height: 20px;
     text-transform: uppercase;
 }
 
+.title-large {
+    font-size: 22px;
+    font-weight: 700;
+    padding-bottom: var(--xsmall-padding);
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
 .subtitle {
-    font-size: var(--small-text);
+    font-size: var(--default-text);
     line-height: 15px;
+    letter-spacing: .3px;
     font-weight: 600;
 }
 
 .subtitle-small {
-    font-size: var(--xsmall-text);
+    font-size: var(--small-text);
+    font-weight: 600;
+    letter-spacing: .3px;
     line-height: 12px;
 }

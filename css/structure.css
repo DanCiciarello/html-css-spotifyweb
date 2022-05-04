@@ -18,12 +18,13 @@
     --small-padding: .5rem;
     --default-padding: 1rem;
     --large-padding: 1.5rem;
+    --xlarge-padding: 2rem;
     /* Text */
-    --xsmall-text: 8px;
-    --small-text: 10px;
-    --default-text: 12px;
-    --large-text: 14px;
-    --xlarge-text: 16px;
+    --xsmall-text: 6px;
+    --small-text: 8px;
+    --default-text: 10px;
+    --large-text: 12px;
+    --xlarge-text: 14px;
 }
 
 
@@ -68,12 +69,29 @@
 }
 
 
-/*----------*/
-/* Overflow */
-/*----------*/
+/*-----------*/
+/* Utilities */
+/*-----------*/
 
 .overflow-y {
     overflow: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.rounded {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.row {
+    gap: 10px;
+}
+
+.col {
+    flex-basis: calc(100% / 6);
 }
 
 
@@ -133,20 +151,11 @@
     padding: var(--default-padding);
 }
 
-.playlist-tab-container {
-    margin-bottom: var(--large-padding);
-    /* Debug */
-    height: 10px;
-    border: 1px dashed red;
-}
-
 .recently-played-container,
 .created-for-container,
-.popular-artists-container {
-    margin-bottom: var(--large-padding);
-    /* Debug */
-    height: 300px;
-    border: 1px dashed red;
+.popular-artists-container,
+.playlist-tab-container {
+    margin-bottom: var(--xlarge-padding);
 }
 
 /* Control bar */
@@ -156,6 +165,7 @@
     padding: var(--small-padding);
     background-color: #282828;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .volume-controller-container,
@@ -194,14 +204,21 @@
     height: 100%;
 }
 
+/* Playlist */
+
+.playlist-info {
+    margin-bottom: var(--default-padding);
+}
+
 /* Control bar */
 
 .playing-now-cover,
 .playing-now-controls {
-    flex-basis: 25%;
+    flex-basis: 20%;
 }
 
 .playing-now-controls {
+    font-size: var(--large-text);
     gap: 10px;
     text-decoration: none;
     color: var(--color-gray);
@@ -212,7 +229,7 @@
 }
 
 .volume-controller-icons {
-    font-size: var(--default-text);
+    font-size: var(--large-text);
     gap: 13px;
     text-decoration: none;
 }
@@ -227,7 +244,7 @@
     height: 50%;
     margin: 0 auto;
     justify-content: space-around;
-    font-size: var(--default-text);
+    font-size: var(--large-text);
 }
 
 .song-controls .play-button {
@@ -242,6 +259,6 @@
 .song-time {
     position: relative;
     min-width: 35px;
-    font-size: var(--xsmall-text);
+    font-size: var(--small-text);
     font-weight: 500;
 }

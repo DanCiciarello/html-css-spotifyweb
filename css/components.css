@@ -20,7 +20,6 @@
 .sidebar-button-text {
     display: flex;
     align-items: center;
-    font-size: var(--small-text);
 }
 
 .user-sidebar-button {
@@ -63,13 +62,11 @@
 .crea-playlist-text {
     display: flex;
     align-items: center;
-    font-size: var(--default-text);
 }
 
 /* Sidebar playlist */
 
 .sidebar-playlist {
-    font-size: var(--small-text);
     color: var(--color-gray);
     margin-bottom: var(--default-padding);
 }
@@ -89,7 +86,6 @@
 
 .install-app-text {
     color: var(--color-gray);
-    font-size: var(--small-text);
 }
 
 
@@ -106,6 +102,50 @@
     border: .5px solid #ffffff;
     text-decoration: none;
     color: #ffffff;
+}
+
+
+/*----------*/
+/* Playlist */
+/*----------*/
+
+/* Playlist tab item */
+
+.playlist-tab-item {
+    text-transform: uppercase;
+    color: var(--color-gray);
+    padding: 0 var(--default-padding);
+}
+
+.highlight-playlist-tab-item {
+    width: 20px;
+    border-top: 2px solid #ADFF2F;
+    margin: 0 auto;
+}
+
+/* Playlist card */
+
+.playlist-card {
+    width: 100%;
+}
+
+.playlist-card-cover {
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+.playlist-card-cover img {
+    width: 100%;
+}
+
+.playlist-card-info {
+    text-align: center;
+}
+
+.playlist-card-info .subtitle {
+    font-weight: 700;
+    padding: var(--xsmall-padding) 0;
+
 }
 
 

@@ -39,25 +39,25 @@
                     <!-- Home -->
                     <a href="#" class="sidebar-button color-white">
                         <div class="sidebar-button-icon"><img src="img/home.svg" alt="Home icon"></div>
-                        <div class="sidebar-button-text">Home</div>
+                        <div class="subtitle-small sidebar-button-text">Home</div>
                     </a>
 
                     <!-- Cerca -->
                     <a href="#" class="sidebar-button color-gray">
                         <div class="sidebar-button-icon"><img src="img/search.svg" class="color-gray-svg" alt="Search icon"></div>
-                        <div class="sidebar-button-text">Cerca</div>
+                        <div class="subtitle-small sidebar-button-text">Cerca</div>
                     </a>
 
                     <!-- La tua libreria -->
                     <a href="#" class="sidebar-button color-gray">
                         <div class="sidebar-button-icon"><img src="img/libreria.svg" class="color-gray-svg" alt="Search icon"></div>
-                        <div class="sidebar-button-text">La tua libreria</div>
+                        <div class=" subtitle-small sidebar-button-text">La tua libreria</div>
                     </a>
 
                 </div>
 
                 <!-- Sidebar Playlist -->
-                <div class="sidebar-playlist-container grow color-white">
+                <div class="sidebar-playlist-container grow flex flex-column overflow-y color-white">
                     
                     <!-- Playlist title -->
                     <div class="sidebar-playlist-title">
@@ -67,16 +67,36 @@
                     <!-- Crea playlist -->
                     <a href="#" class="crea-playlist">
                         <div class="crea-playlist-icon">+</div>
-                        <div class="crea-playlist-text">Crea playlist</div>
+                        <div class="subtitle crea-playlist-text">Crea playlist</div>
                     </a>
 
                     <!-- Playlist list -->
-                    <div class="playlist-list">
-                        <div class="sidebar-playlist">Playlist #01</div>
-                        <div class="sidebar-playlist">Playlist #02</div>
-                        <div class="sidebar-playlist">Playlist #03</div>
-                        <div class="sidebar-playlist">Playlist #04</div>
-                        <div class="sidebar-playlist">Playlist #05</div>
+                    <div class="playlist-list flex flex-column grow overflow-y">
+                        <div class="subtitle-small sidebar-playlist">Playlist #01</div>
+                        <div class="subtitle-small sidebar-playlist">Playlist #02</div>
+                        <div class="subtitle-small sidebar-playlist">Playlist #03</div>
+                        <div class="subtitle-small sidebar-playlist">Playlist #04</div>
+                        <div class="subtitle-small sidebar-playlist">Playlist #05</div>
+                        <div class="subtitle-small sidebar-playlist">Playlist #06</div>
+                        <div class="subtitle-small sidebar-playlist">Playlist #07</div>
+                        <div class="subtitle-small sidebar-playlist">Playlist #08</div>
+                        <div class="subtitle-small sidebar-playlist">Playlist #09</div>
+                        <div class="subtitle-small sidebar-playlist">Playlist #10</div>
+                        <div class="subtitle-small sidebar-playlist">Playlist #11</div>
+                        <div class="subtitle-small sidebar-playlist">Playlist #12</div>
+                        <div class="subtitle-small sidebar-playlist">Playlist #13</div>
+                        <div class="subtitle-small sidebar-playlist">Playlist #14</div>
+                        <div class="subtitle-small sidebar-playlist">Playlist #15</div>
+                        <div class="subtitle-small sidebar-playlist">Playlist #16</div>
+                        <div class="subtitle-small sidebar-playlist">Playlist #17</div>
+                        <div class="subtitle-small sidebar-playlist">Playlist #18</div>
+                        <div class="subtitle-small sidebar-playlist">Playlist #19</div>
+                        <div class="subtitle-small sidebar-playlist">Playlist #20</div>
+                        <div class="subtitle-small sidebar-playlist">Playlist #21</div>
+                        <div class="subtitle-small sidebar-playlist">Playlist #22</div>
+                        <div class="subtitle-small sidebar-playlist">Playlist #23</div>
+                        <div class="subtitle-small sidebar-playlist">Playlist #24</div>
+                        <div class="subtitle-small sidebar-playlist">Playlist #25</div>
                     </div>
 
                 </div>
@@ -87,7 +107,7 @@
                     <!-- Install app -->
                     <a href="#" class="install-app">
                         <div class="install-app-icon"><img src="img/download.svg" class="color-gray-svg" alt="Download icon"></div>
-                        <div class="install-app-text">Installa app</div>
+                        <div class="subtitle-small install-app-text flex center-y-align">Installa app</div>
                     </a>
 
                     <!-- Divider -->
@@ -96,7 +116,7 @@
                     <!-- User account -->
                     <a href="#" class="sidebar-button user-sidebar-button color-white">
                         <div class="sidebar-button-icon user-sidebar-icon"></div>
-                        <div class="sidebar-button-text user-sidebar-text">John Doe</div>
+                        <div class="subtitle sidebar-button-text user-sidebar-text">John Doe</div>
                     </a>
 
                 </div>
@@ -121,22 +141,180 @@
                 <div class="playlist-container grow overflow-y">
                     
                     <!-- Playlist tab -->
-                    <div class="playlist-tab-container">
-
+                    <div class="playlist-tab-container flex wrap center-x-align">
+                        <div class="subtitle playlist-tab-item">
+                            <h6>In evidenza</h6>
+                            <div class="highlight-playlist-tab-item"></div>
+                        </div>
+                        <div class="subtitle playlist-tab-item">
+                            <h6>Podcast</h6>
+                            <div class="highlight-playlist-tab-item hidden"></div>
+                        </div>
+                        <div class="subtitle playlist-tab-item">
+                            <h6>Classifiche</h6>
+                            <div class="highlight-playlist-tab-item hidden"></div>
+                        </div>
+                        <div class="subtitle playlist-tab-item">
+                            <h6>Generi e mood</h6>
+                            <div class="highlight-playlist-tab-item hidden"></div>
+                        </div>
+                        <div class="subtitle playlist-tab-item">
+                            <h6>Nuove uscite</h6>
+                            <div class="highlight-playlist-tab-item hidden"></div>
+                        </div>
+                        <div class="subtitle playlist-tab-item">
+                            <h6>Scopri</h6>
+                            <div class="highlight-playlist-tab-item hidden"></div>
+                        </div>
                     </div>
 
                     <!-- Recently played -->
                     <div class="recently-played-container">
+
+                        <!-- Playlist info -->
+                        <div class="playlist-info">
+                            <div class="title-large color-white">Recently played</div>
+                        </div>
+
+                        <!-- Playlist cards -->
+                        <div class="row flex">
+                            <div class="col">
+                                <div class="playlist-card">
+                                    <!-- Playlist card cover -->
+                                    <div class="playlist-card-cover"><img src="img/metal_lifting.jpg" alt="Playlist cover"></div>
+                                    <!-- Playlist card info -->
+                                    <div class="playlist-card-info">
+                                        <div class="subtitle color-white">Heavy Metal</div>
+                                        <div class="subtitle-small color-gray">Subtitle</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="playlist-card">
+                                    <!-- Playlist card cover -->
+                                    <div class="playlist-card-cover"><img src="img/stranger.jpeg" alt="Playlist cover"></div>
+                                    <!-- Playlist card info -->
+                                    <div class="playlist-card-info">
+                                        <div class="subtitle color-white">Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</div>
+                                        <div class="subtitle-small color-gray">Kyle Dixon & Michael Stein</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="playlist-card">
+                                    <!-- Playlist card cover -->
+                                    <div class="playlist-card-cover"><img src="img/aquietplace.jpeg" alt="Playlist cover"></div>
+                                    <!-- Playlist card info -->
+                                    <div class="playlist-card-info">
+                                        <div class="subtitle color-white">A Quiet Place</div>
+                                        <div class="subtitle-small color-gray">Subtitle</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="playlist-card">
+                                    <!-- Playlist card cover -->
+                                    <div class="playlist-card-cover"><img src="img/split.jpeg" alt="Playlist cover"></div>
+                                    <!-- Playlist card info -->
+                                    <div class="playlist-card-info">
+                                        <div class="subtitle color-white">Split</div>
+                                        <div class="subtitle-small color-gray">Subtitle</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="playlist-card">
+                                    <!-- Playlist card cover -->
+                                    <div class="playlist-card-cover"><img src="img/cure.jpeg" alt="Playlist cover"></div>
+                                    <!-- Playlist card info -->
+                                    <div class="playlist-card-info">
+                                        <div class="subtitle color-white">A cure for wellness</div>
+                                        <div class="subtitle-small color-gray">Subtitle</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="playlist-card">
+                                    <!-- Playlist card cover -->
+                                    <div class="playlist-card-cover"><img src="img/sinister.jpeg" alt="Playlist cover"></div>
+                                    <!-- Playlist card info -->
+                                    <div class="playlist-card-info">
+                                        <div class="subtitle color-white">Sinister</div>
+                                        <div class="subtitle-small color-gray">Subtitle</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
 
                     <!-- Created for -->
                     <div class="created-for-container">
 
+                        <!-- Playlist info -->
+                        <div class="playlist-info">
+                            <div class="title-large color-white">Creato per John Doe</div>
+                            <div class="subtitle-small color-gray">Più ascolti, più accurati saranno i suggerimenti</div>
+                        </div>
+
+                        <!-- Playlist cards -->
+                        <div class="row flex">
+                            <div class="col">
+                                <div class="playlist-card">
+                                    <!-- Playlist card cover -->
+                                    <div class="playlist-card-cover"><img src="img/radar.jpeg" alt="Playlist cover"></div>
+                                    <!-- Playlist card info -->
+                                    <div class="playlist-card-info">
+                                        <div class="subtitle color-white">Release Radar</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="playlist-card">
+                                    <!-- Playlist card cover -->
+                                    <div class="playlist-card-cover"><img src="img/mixdaily.jpeg" alt="Playlist cover"></div>
+                                    <!-- Playlist card info -->
+                                    <div class="playlist-card-info">
+                                        <div class="subtitle color-white">Daily Mix 1</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
 
                     <!-- Popular artists -->
                     <div class="popular-artists-container">
+
+                        <!-- Playlist info -->
+                        <div class="playlist-info">
+                            <div class="title-large color-white">Artisti più popolari</div>
+                            <div class="subtitle-small color-gray">Più ascolti, più accurati saranno i suggerimenti</div>
+                        </div>
+
+                        <!-- Playlist cards -->
+                        <div class="row flex">
+                            <div class="col">
+                                <div class="playlist-card">
+                                    <!-- Playlist card cover -->
+                                    <div class="playlist-card-cover rounded"><img src="img/einaudi.jpeg" alt="Playlist cover"></div>
+                                    <!-- Playlist card info -->
+                                    <div class="playlist-card-info">
+                                        <div class="subtitle color-white">Ludovico Einaudi</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="playlist-card">
+                                    <!-- Playlist card cover -->
+                                    <div class="playlist-card-cover rounded"><img src="img/youg.jpeg" alt="Playlist cover"></div>
+                                    <!-- Playlist card info -->
+                                    <div class="playlist-card-info">
+                                        <div class="subtitle color-white">Lana Del Rey</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
 
