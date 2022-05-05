@@ -7,39 +7,35 @@ lg=1100
 
 */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1100px) {
     .col {
         max-width: calc(100% / 4 - 10px);
         min-width: calc(100% / 4 - 10px);
     }
-
-    .control-bar-container {
-        gap: 40px;
-    }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .col {
         max-width: calc(100% / 2 - 10px);
         min-width: calc(100% / 2 - 10px);
+    }
+
+    .control-bar-container {
+        gap: 40px;
     }
 
     .playing-now-controls {
         flex-direction: column;
         gap: 3px;
     }
+}
 
+@media screen and (max-width: 600px) {
     .playing-now-container,
     .volume-controller-container {
         min-width: 150px;
     }
 
-    .song-controls {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 500px) {
     .playing-now-container,
     .volume-controller-container {
         min-width: 115px;
