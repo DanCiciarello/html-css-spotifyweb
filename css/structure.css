@@ -20,11 +20,11 @@
     --large-padding: 1.5rem;
     --xlarge-padding: 2rem;
     /* Text */
-    --xsmall-text: 6px;
-    --small-text: 8px;
-    --default-text: 10px;
-    --large-text: 12px;
-    --xlarge-text: 14px;
+    --xsmall-text: 7px;
+    --small-text: 9px;
+    --default-text: 11px;
+    --large-text: 13px;
+    --xlarge-text: 15px;
 }
 
 
@@ -75,6 +75,10 @@
 
 .overflow-y {
     overflow: auto;
+}
+
+.overflow-x {
+    overflow-x: scroll;
 }
 
 .hidden {
