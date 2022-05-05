@@ -8,6 +8,10 @@
     transform: scale(105%);
 }
 
+.upgrade-button {
+    transition: 300ms;
+}
+
 /* Links */
 
 .playlist-tab-item:hover,
@@ -16,7 +20,8 @@
 .sidebar-playlist:hover,
 .install-app:hover .subtitle-small,
 .playing-now-song:hover .subtitle-small,
-.playing-now-controls a:hover i {
+.playing-now-controls a:hover i,
+.playlist-card-info .subtitle-small:hover {
     color: #ffffff;
 }
 
@@ -29,8 +34,10 @@
     background-color: #ffffff;
 }
 
-.playing-now-song:hover .subtitle-small {
+.playing-now-song:hover .subtitle-small,
+.playlist-card-info .subtitle-small:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .play-button:hover {
@@ -48,6 +55,12 @@
 .song-time.grow:hover .status-bar-toggle,
 .volume-controller-bar-wrapper:hover .status-bar-toggle {
     display: block;
+}
+
+/* Song controls */
+
+.song-controls .play-button {
+    transition: 200ms;
 }
 
 /* Playlist Card */
@@ -70,4 +83,35 @@
 
 .playlist-card-cover:hover .playlist-card-cover-hover {
     display: flex;
+}
+
+/* Playlist tab extra */
+
+.playlist-tab-item:hover .highlight-playlist-tab-item {
+    animation: flexing 1000ms;
+}
+
+@keyframes flexing {
+    0%, 100% {
+        width: 20px;
+    }
+    50% {
+        width: 40px;
+    }
+}
+
+.playlist-tab-item:hover .highlight-playlist-tab-item.hidden {
+    animation: pulsing 1500ms infinite;
+}
+
+@keyframes pulsing {
+    0%, 100% {
+        visibility: visible;
+        width: 10px;
+        border-top: 2px solid var(--color-gray);
+    }
+    50% {
+        width: 20px;
+        border-top: 2px solid var(--color-gray);
+    }
 }
